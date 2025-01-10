@@ -1,4 +1,5 @@
 ---
 permalink: /fotos/
-title: "About"
+title: "splash"
 ---
+

@@ -1,9 +1,11 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+  - title: "Digital Design"
+    url: /digital-design/
+  - title: "fotos"
+    url: /fotos/
+  - title: "projects"
+    url: /projects/
+  - title: "blog"
+    url: /posts/

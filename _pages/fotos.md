@@ -1,0 +1,4 @@
+---
+permalink: /fotos/
+title: "About"
+---

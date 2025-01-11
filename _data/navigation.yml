@@ -3,9 +3,9 @@ main:
     url: /about/
   - title: "Digital Design"
     url: /digital-design/
-  - title: "fotos"
+  - title: "Photos"
     url: /fotos/
-  - title: "projects"
+  - title: "Misc. Project"
     url: /projects/
-  - title: "blog"
-    url: /posts/
+  # - title: "blog"
+  #   url: /posts/

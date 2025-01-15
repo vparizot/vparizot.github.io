@@ -96,17 +96,21 @@ gallery:
     title: "Death Valley"
 
   - url: 
-    image_path: 
+    image_path: assets/images/microPDemo/VIC_5525.jpg
     alt: "Boston Tea Party"
     title: "Boston Tea Party"
 
   - url: 
     image_path: assets/images/fotos/b5guitar.jpg
-    alt: "Boston Tea Party"
+    alt: "B5 Guitar"
 
 ---
 
+## FOTOS
+I like to take photos, mostly of my people and the things around me. I develop and print my own photos in the darkroom as much as possible. *Click on a photo to see the album, and feel free to request access to the albums!*
+
+
 <!-- {% include gallery caption="This is a sample gallery with **Markdown support**." %} -->
 
-{% include gallery id="gallery" caption="This is a half gallery layout example." %}
+{% include gallery id="gallery"  %}
 <!-- include.caption -->

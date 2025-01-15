@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 hidden: true
-title: Victoria Parizot
+title: Martha-Victoria Parizot
 header:
 #   overlay_filter: 0.5,"#65350f"
   overlay_image: /assets/images/sand.jpg

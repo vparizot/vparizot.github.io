@@ -1,7 +1,7 @@
 ---
 title: "Lab 5: Interrupts"
 description: "Implementation of MCU Interrupts to characterize a motor"
-permalink: /lab5/
+permalink: /interruptProject/
 
 ---
 
@@ -27,11 +27,13 @@ I configured the interrupts to enable on the rising and falling edge of each enc
 
 Below is a flowchart showing each interrupt and the main loop that is executed. 
 
-![Interrupt Flow Chart](/assets/images/lab5/flowchart3.jpeg) 
+<!-- ![Interrupt Flow Chart](/assets/images/lab5/flowchart3.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab5/flowchart3.jpeg" alt="Interrupt Flow Chart" caption="Interrupt Flow Chart" %}
 
 We know that encoder A and B will alternate in triggering the interrupt, due to their relationship. Thus, I kept track of the distance between and edge of A and B in the delCount variable.
 
-![delCount with the Encoder Pulses](/assets/images/lab5/delCount.jpeg) 
+<!-- ![delCount with the Encoder Pulses](/assets/images/lab5/delCount.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab5/delCount.jpeg" alt="delCount with the Encoder Pulses" caption="delCount with the Encoder Pulses" %}
 
 I minimized the code in the interrupts by saving values needed in calculation into global variables, and computing the speed and direction outside of the interrupt. 
 
@@ -47,7 +49,8 @@ For more information on timers, see [Lab 4](https://vparizot.github.io/hmc-e155-
 
 To convert the delCount variable to speed in revolutions/second, I used the following conversion. Note that I divide delCount by $1,000,000$ to convert from counts per quarter pulse to seconds per quarter pulse, based on the clock frequency of 1 MHz. 
 
-![Calculating speed in [rev/s] from delCount](/assets/images/lab5/speedCalculations.jpeg) 
+<!-- ![Calculating speed in [rev/s] from delCount](/assets/images/lab5/speedCalculations.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab5/speedCalculations.jpeg" alt="Calculating speed in [rev/s] from delCount" caption="Calculating speed in [rev/s] from delCount" %}
 
 To determine the direction of the motor, I used conditional statements in my interrupt handler, where the signal's edge that triggered the interrupt could be used to compute direction.
 
@@ -60,18 +63,23 @@ The encoders used for this lab operate at a 5V logic level. I used PA6 and PA8 a
 
 This lab used a 25GA-370 DC Motor [datasheet](https://hmc-e155.github.io/assets/lab/25GA370.pdf), with the following color coding. 
 
-![Encoder Wiring Color Coding](/assets/images/lab5/MotorDatasheet.png) 
+<!-- ![Encoder Wiring Color Coding](/assets/images/lab5/MotorDatasheet.png)  -->
+{% include figure popup=true image_path="/assets/images/lab5/MotorDatasheet.png" alt="Encoder Wiring Color Coding" caption="Encoder Wiring Color Coding" %}
 
 I powered the motor with a voltage source, and attatched to my MCU, following the below wiring diagram.
-![Wiring Diagram](/assets/images/lab5/PinSchematic.jpeg) 
+<!-- ![Wiring Diagram](/assets/images/lab5/PinSchematic.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab5/PinSchematic.jpeg" alt="Wiring Diagram" caption="Wiring Diagram" %}
 
 ## Testing & Debugging
 To test, I compared the oscilloscope and printed values at 12 V. 
 
 When running the motor at 12V and evaluating the encoder signals with the oscilloscope, I found that the motor ran at 10.417 revolutions/s. 
 
-![Oscilloscope Screen Capture for 12V](/assets/images/lab5/Osc12V.png) 
-![Freq Calculations for Oscilloscope Data at 12V](/assets/images/lab5/CalcOsc12V.jpeg) 
+<!-- ![Oscilloscope Screen Capture for 12V](/assets/images/lab5/Osc12V.png)  -->
+{% include figure popup=true image_path="/assets/images/lab5/Osc12V.png" alt="Oscilloscope Screen Capture for 12V" caption="Oscilloscope Screen Capture for 12V" %}
+
+<!-- ![Freq Calculations for Oscilloscope Data at 12V](/assets/images/lab5/CalcOsc12V.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab5/CalcOsc12V.jpeg" alt="Freq Calculations for Oscilloscope Data at 12V" caption="Freq Calculations for Oscilloscope Data at 12V" %}
 
 At 12 V, my MCU read a speed of 10.313 revoluions/s. 
 
@@ -79,7 +87,8 @@ The motor provided in the lab is expected to spin at approximately 10 rev/s. Bot
 
 ## Demonstration
 Below is a photo of the printed output of the motor as I vary the motor input voltage. 
-![Readings of motor speed](/assets/images/lab5/output.png) 
+<!-- ![Readings of motor speed](/assets/images/lab5/output.png)  -->
+{% include figure popup=true image_path="/assets/images/lab5/output.png" alt="Readings of motor speed" caption="Readings of motor speed" %}
 
 
 ## Comparing with Polling

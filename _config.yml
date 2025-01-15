@@ -16,7 +16,7 @@
 # Site Settings
 locale                   : "en-US"
 
-title: "VICTORIA PARIZOT"
+title: "MVPARIZOT"
 # title_separator          : "-"
 # subtitle                 : "A Jekyll theme"
 
@@ -91,6 +91,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/vparizot"
+    - label: "Resume"
+      icon: "fa-solid fa-scroll"
+      url: "https://docs.google.com/document/d/e/2PACX-1vTFlpDc-Ko6eE53fxlV-lATOuHy4UeupXxoglTW_tuVPPENkOFvAJzHs5jiRg7QYf3TiOKGzU8lNNl_/pub"
 
 defaults:
   # _posts

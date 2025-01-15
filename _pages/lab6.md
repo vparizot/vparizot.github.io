@@ -1,7 +1,7 @@
 ---
 title: "Lab 6: The Internet of Things and Serial Peripheral Interface"
 description: "An application of SPI to Read Temperature"
-permalink: /lab6/
+permalink: /IoTProject/
 
 ---
 
@@ -37,13 +37,16 @@ My design uses the CMSIS library device templates, making it easier to decipher 
 ### Interfacing with the Temperature Sensor
 To communicate with the temperature sensor, I had to send the write address, 0x80, for the configuration bits followed by the configuration bits. These configuration bits were set depending on the wanted temperature resolution. Then I would read the LSB and MSB of the temperature bits by calling read address 0x01 or 0x02, respectfully. The Register Address structure and the bit structure of the temperature output is below. 
 
-![Register Address Structure for DS1722](/assets/images/lab6/RegisterAddressStructure.png) 
+<!-- ![Register Address Structure for DS1722](/assets/images/lab6/RegisterAddressStructure.png)  -->
+{% include figure popup=true image_path="/assets/images/lab6/RegisterAddressStructure.png" alt="Register Address Structure for DS1722" caption="Register Address Structure for DS1722" %}
 
-![Temperature Bit Structure for DS1722](/assets/images/lab6/TemperatureBitStructure.png) 
+<!-- ![Temperature Bit Structure for DS1722](/assets/images/lab6/TemperatureBitStructure.png)  -->
+{% include figure popup=true image_path="/assets/images/lab6/TemperatureBitStructure.png" alt="Temperature Bit Structure for DS1722" caption="Temperature Bit Structure for DS1722" %}
 
 The screenshot of the code for my SPI interaction is below to showcase the send/recieve format and how I toggle the Chip Enable. 
 
-![SPI Interaction with Temperature Sensor](/assets/images/lab6/SPIcodeInteraction.png) 
+<!-- ![SPI Interaction with Temperature Sensor](/assets/images/lab6/SPIcodeInteraction.png)  -->
+{% include figure popup=true image_path="/assets/images/lab6/SPIcodeInteraction.png" alt="SPI Interaction with Temperature Sensor" caption="SPI Interaction with Temperature Sensor" %}
 
 To be able to print the temperature, I used a bit map to isolate the sign bit in the MSB. I then used the other values of the MSB to determine the integer value of the temperature. Then, depending on if the temperature was positive or negative, I would add or subtract corresponding resolution bits. 
 
@@ -57,7 +60,8 @@ Everytime the website would refresh, the DS1722 would read and print the updated
 ### Hardware Design
 To implement in hardware, I attatched the corresponding pins of the DS1722 and ESP8266 to the MCU, based on the pin diagram below.
 
-![SPI Interaction with Temperature Sensor](/assets/images/lab6/pinDiagram.jpeg) 
+<!-- ![SPI Interaction with Temperature Sensor](/assets/images/lab6/pinDiagram.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab6/pinDiagram.jpeg" alt="SPI Interaction with Temperature Sensor" caption="SPI Interaction with Temperature Sensor" %}
 
 
 ## Testing & Debugging
@@ -69,7 +73,8 @@ The logic analyzer allowed me to look at the SPI communications. I could also co
 
 A sample SPI transaction from logic analyzer can be seen below. 
 
-![Lab 6 SPI Transaction on Logic Analyzer](/assets/images/lab6/DS1Z_QuickPrint12.png) 
+<!-- ![Lab 6 SPI Transaction on Logic Analyzer](/assets/images/lab6/DS1Z_QuickPrint12.png)  -->
+{% include figure popup=true image_path="/assets/images/lab6/DS1Z_QuickPrint12.png" alt="Lab 6 SPI Transaction on Logic Analyzer" caption="Lab 6 SPI Transaction on Logic Analyzer" %}
 
 ## Conclusion
 Lab 6 provided an introduction into SPI and UART. Moreover, I grew more comfortable with additional debugging tools, such as using the debug mode and the logic analyzer to decipher SPI communication.

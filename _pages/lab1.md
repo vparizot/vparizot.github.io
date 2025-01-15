@@ -1,5 +1,5 @@
 ---
-permalink: /lab1/
+permalink: /setup/
 title: "Lab 1: FPGA and MCU Setup and Testing"
 description: "An exploration and set up of the MCU and FPGA development boards through assembly, programming, simulation, debugging, and hardware implementation." 
 
@@ -20,12 +20,15 @@ More information on the lab requirements can be found on the [E155 Lab 1 Course 
 ## Development Board: Soldering and Set up
 The first step was to assemble the custom printed circuit board which hosts the MCU and FPGA boards. This involved sodering both surface mount technology (SMT) and through hole technology (THT) components, based on the provided [BOM.](https://hmc-e155.github.io/assets/doc/E155_v4_Dev_Board_BOM.html)
 
-![Completed E155 Development Board](/assets/images/lab1/SolderFront.jpeg) 
+<!-- ![Completed E155 Development Board](/assets/images/lab1/SolderFront.jpeg)  -->
+
+{% include figure popup=true image_path="/assets/images/lab1/SolderFront.jpeg" alt="Completed E155 Development Board" caption="Completed E155 Development Board" %}
+
 
 After soldering, it was time to power up and test the board. To do so, I programmed the FPGA using Lattice Radiant and Segger Embedded Studio to toggle LED pins at predetermined frequencies. After confirming my board worked as expected, it was time to implement LEDs and the 7 segment display.
 
 ## Design & Implementation
-<!-- Requirements of LED display (list input, outputs, and truth tables)  -->
+
 ### Lab Requirements
 The next step was to program three LEDs and a seven segment display. The seven segment display is to read four DIP switch signals, s, as a 4 bit binary value and display that value in hexidecimal. The behavior of the LEDs are described by the following tables. 
 
@@ -146,7 +149,8 @@ The next step was to program three LEDs and a seven segment display. The seven s
 ### Design
 To organize my thoughts I used a block diagram to map the logic.
 
-![Lab 1 Block Diagram](/assets/images/lab1/Lab1BlockDiagram.png) 
+<!-- ![Lab 1 Block Diagram](/assets/images/lab1/Lab1BlockDiagram.png)  -->
+{% include figure popup=true image_path="/assets/images/lab1/Lab1BlockDiagram.png" alt="Lab 1 Block Diagram" caption="Lab 1 Block Diagram" %}
 
 #### Led Logic Design
 The truth tables revealed that led[0] behaves as an XOR gate with inputs S1 and S0 and that led[1] behaves as an AND gate with inputs S3 and S2. 
@@ -157,26 +161,33 @@ To have led[2] to blink at 2.4 Hz, I utilized the internal 48 gHz high speed osc
 To interface the seven segment display with the board, I conferred with the [datasheet](https://www.jameco.com/Jameco/Products/ProdDS/335090.pdf) to determine resistor values. 
 <!-- datasheet and resitor values: Calculations provided to demonstrate that the current draw for each segment in the seven-segment display is within recommended operating conditions. -->
 
-![Resistor Calculations for Seven Segment Display](/assets/images/lab1/resistorcalculations.jpeg) 
+<!-- ![Resistor Calculations for Seven Segment Display](/assets/images/lab1/resistorcalculations.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab1/resistorcalculations.jpeg" alt="Resistor Calculations for Seven Segment Display" caption="Resistor Calculations for Seven Segment Display" %}
 
 I opted to use resistor values of 240 ohms, producing 6.25 mA of current. 
 
 A wiring schematic is shown below. 
-![Lab 1 Circuit Schematic, Victoria Parizot, 09/04/2024](/assets/images/lab1/CircuitDiagram.jpeg) 
+<!-- ![Lab 1 Circuit Schematic, Victoria Parizot, 09/04/2024](/assets/images/lab1/CircuitDiagram.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab1/CircuitDiagram.jpeg" alt="Lab 1 Circuit Schematic, Victoria Parizot, 09/04/2024" caption="Lab 1 Circuit Schematic, Victoria Parizot, 09/04/2024" %}
+
 
 Here is a photo of the implemented design!
-![Completed Circuit](/assets/images/lab1/SevenSegments.jpeg) 
+<!-- ![Completed Circuit](/assets/images/lab1/SevenSegments.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab1/SevenSegments.jpeg" alt="Completed Circuit" caption="Completed Circuit" %}
 
 <!-- video of it working -->
 ## Testing
 <!-- Explanation of testing approach. How did you verify your design was behaving as expected? -->
 To verify that the design would work as expected, I ran simulations on ModelSim. To do, I instantiated a test bench that would test all 16 possible inputs of the dip switch to ensure the LED and seven segment display output as expected. 
 
-![Wave forms of test bench](/assets/images/lab1/wave2.png) 
+<!-- ![Wave forms of test bench](/assets/images/lab1/wave2.png)  -->
+{% include figure popup=true image_path="/assets/images/lab1/wave2.png" alt="Wave forms of test bench" caption="Wave forms of test bench" %}
 
 
 I tested the blinking led[2] with the oscilliscope to confirm it had a frequency of 2.4 hz.
-![Frequency verification of led[2]](/assets/images/lab1/240HzLed%5B2%5D.png) 
+<!-- ![Frequency verification of led[2]](/assets/images/lab1/240HzLed%5B2%5D.png)  -->
+
+{% include figure popup=true image_path="/assets/images/lab1/240HzLed%5B2%5D.png" alt="Frequency verification of led[2]" caption="Frequency verification of led[2]" %}
 
 
 <!-- ModelSim simulation (either manually force or automatic testbench) to demonstrate that the design is working properly. -->

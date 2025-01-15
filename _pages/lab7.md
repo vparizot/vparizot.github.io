@@ -1,7 +1,7 @@
 ---
 title: "Lab 7: The Advanced Encryption Standard"
 # description: "Welcome to my Quarto portfolio"
-permalink: /lab7/
+permalink: /AESEncryptionProject/
 
 ---
 
@@ -40,9 +40,11 @@ I originally opted for not using a FSM for 'simplicity', but boy was I wrong. As
 Due to the intense recursive nature of this algorithm, once a signal is incorrect, all subsequent signals are incorrect. As a result, it was beneficial to me to text each module and functionality separately, before testing the entire AES through the included AES_Core testbench. I used ModelSim's wave window to understand the timing of my system, and to isolate my bugs.
 
 My design passes both the AES core and AES SPI simulation testbenches. 
-![My Design Passes the AES Core Simulation Textbench](/assets/images/lab7/aes_cor_tb_success.PNG) 
+<!-- ![My Design Passes the AES Core Simulation Textbench](/assets/images/lab7/aes_cor_tb_success.PNG)  -->
+{% include figure popup=true image_path="/assets/images/lab7/aes_cor_tb_success.PNG" alt="My Design Passes the AES Core Simulation Textbench" caption="My Design Passes the AES Core Simulation Textbench" %}
 
-![My Design Passes the AES SPI Simulation Textbench](/assets/images/lab7/aes_spi_tb_success.PNG) 
+<!-- ![My Design Passes the AES SPI Simulation Textbench](/assets/images/lab7/aes_spi_tb_success.PNG)  -->
+{% include figure popup=true image_path="/assets/images/lab7/aes_spi_tb_success.PNG" alt="My Design Passes the AES SPI Simulation Textbench" caption="My Design Passes the AES SPI Simulation Textbench" %}
 
 After confirming my code works as expected in simulation, is was time to upload my code using Segger and Radiant. 
 
@@ -50,9 +52,11 @@ During my hardware integration I ran into a problem of not having enough RAM to 
 
 I also hooked up my SPI communication to the logic analyzer, where I set D0 as SCK, D2 as MOSI, D4 as Done, D5 as MISO, and D7 as the chip select. The SPI communication is displayed below:
 
-![SPI Communication on Logic Analyzer](/assets/images/lab7/DS1Z_QuickPrint2.png) 
+<!-- ![SPI Communication on Logic Analyzer](/assets/images/lab7/DS1Z_QuickPrint2.png)  -->
+{% include figure popup=true image_path="/assets/images/lab7/DS1Z_QuickPrint2.png" alt="" caption="" %}
 
-![SPI Communication on Logic Analyzer](/assets/images/lab7/DS1Z_QuickPrint3.png) 
+<!-- ![SPI Communication on Logic Analyzer](/assets/images/lab7/DS1Z_QuickPrint3.png)  -->
+{% include figure popup=true image_path="/assets/images/lab7/DS1Z_QuickPrint3.png" alt="SPI Communication on Logic Analyzer" caption="SPI Communication on Logic Analyzer" %}
 
 
 ## Conclusion

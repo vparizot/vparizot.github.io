@@ -1,7 +1,7 @@
 ---
 title: "Lab 3: Keypad Scanner"
 description: "A deep dive into FSMs"
-permalink: /lab3/
+permalink: /FSMProject/
 
 ---
 ## Introduction & Learning Objectives
@@ -23,12 +23,14 @@ To quote Professor Brake, "This is a thinking person’s lab." As such, I spent 
 
 ### Scanning FSM
 The FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. 
-![Keypad Scanner FSM](/assets/images/lab3/ScanFSM.jpeg) 
+<!-- ![Keypad Scanner FSM](/assets/images/lab3/ScanFSM.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab3/ScanFSM.jpeg" alt="Keypad Scanner FSM" caption="Keypad Scanner FSM" %}
 
 ### Key Debouncing FSM
 I then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed. 
 
-![Button Debouncing FSM](/assets/images/lab3/keyDebounceFSM.jpeg) 
+<!-- ![Button Debouncing FSM](/assets/images/lab3/keyDebounceFSM.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab3/keyDebounceFSM.jpeg" alt="Button Debouncing FSM" caption="Button Debouncing FSM" %}
 
 ### Seven Segment Display
 With the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals. 
@@ -43,26 +45,31 @@ My design was broken up into many different modules, with different FSMs or comb
 For example, to implement switch debouncing, I implemented a FSM with different states. At first, I attempted an approach without an FSM -- using a lot of if statements. However, as the behavior got more complicated, I started to infer latches. To stop this, I opted to draw an FSM so that I can step away from "thinking like a programmer" and start thinking about the hardware. 
 
 A block diagram of my entire design is here:
-![Lab 3 Block Diagram](/assets/images/lab3/block.jpeg) 
+<!-- ![Lab 3 Block Diagram](/assets/images/lab3/block.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab3/block.jpeg" alt="Lab 3 Block Diagram" caption="Lab 3 Block Diagram" %}
 
 ## Simulation and Testing
 The first step here was to test all the modules in modelSim before running on Radiant. This avoided many headaches -- as I wrote test benches for each individual model to ensure expected behavior.
 
 My waveforms for each model is below:
-![ScanFSM Test Bench](/assets/images/lab3/scanfsm-tb.png) 
+<!-- ![ScanFSM Test Bench](/assets/images/lab3/scanfsm-tb.png)  -->
+{% include figure popup=true image_path="/assets/images/lab3/scanfsm-tb.png" alt="ScanFSM Test Bench" caption="ScanFSM Test Bench" %}
 
 
-![Shifter Test Bench](/assets/images/lab3/shifter-tb.png)
+<!-- ![Shifter Test Bench](/assets/images/lab3/shifter-tb.png) -->
+{% include figure popup=true image_path="/assets/images/lab3/shifter-tb.png" alt="Shifter Test Bench" caption="Shifter Test Bench" %}
 
 
-![keyBounce Test Bench](/assets/images/lab3/keyBounce-tb.png) 
+<!-- ![keyBounce Test Bench](/assets/images/lab3/keyBounce-tb.png)  -->
+{% include figure popup=true image_path="/assets/images/lab3/keyBounce-tb.png" alt="keyBounce Test Bench" caption="keyBounce Test Bench" %}
 
 My mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week. 
 
 
 ## Implementation
 The circuit diagram of my implementation, including pin mapping, is here: 
-![Lab 3 Circuit Diagram](/assets/images/lab3/circuitDiagramlab3.jpeg) 
+<!-- ![Lab 3 Circuit Diagram](/assets/images/lab3/circuitDiagramlab3.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab3/circuitDiagramlab3.jpeg" alt="Lab 3 Circuit Diagram" caption="Lab 3 Circuit Diagram" %}
 
 ### Debugging in Implementation 
 During the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.

@@ -1,7 +1,7 @@
 ---
 title: "Lab 4: Digital Audio"
 description: "An exploration of MCU timers to play music"
-permalink: /lab4/
+permalink: /timersProject/
 
 ---
 ## Introduction & Learning Objectives
@@ -22,7 +22,8 @@ The source code for the project can be found in the associated [Github repositor
 
 The MCU read a list of notes specifying pitch (in Hz) and duration (in ms) and generated a corresponding sequence of square waves. To implement this, I used the built-in MSI clock to initialize two timers: Timer 15 to handle duration of each note and Timer 16 to use Pulse Width Modulation (PWM) capabilities to generate the desired pitch. These timers would work together to generate desired square waves out of PA6. This approach is outlined in the image below. 
 
-![MCU Timer Design Outline](/assets/images/lab4/MCU_TIM_Outline.jpeg) 
+<!-- ![MCU Timer Design Outline](/assets/images/lab4/MCU_TIM_Outline.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab4/MCU_TIM_Outline.jpeg" alt="MCU Timer Design Outline" caption="MCU Timer Design Outline" %}
 
 ### MSI Clock
 I left the MSI Clock at it's default frequency of 4 Mhz and was used as the base clock for my subsequent timers. 
@@ -40,7 +41,8 @@ The Auto Reload Register (ARR) represents the maximum value that a timer can cou
 Once the ARR is reached, the Status Register (SR) will change from 0 to 1. Thus, I implemented a while loop that waited until the flag was reached. 
 
 My calculations for duration are below.
-![Lab 4 Duration Calculations](/assets/images/lab4/durationCalc.jpeg) 
+<!-- ![Lab 4 Duration Calculations](/assets/images/lab4/durationCalc.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab4/durationCalc.jpeg" alt="Lab 4 Duration Calculations" caption="Lab 4 Duration Calculations" %}
 
 To understand the limitations of the delay function, we can calculate the maximum and minimum durations supported. 
 
@@ -63,17 +65,19 @@ Timer 16 was set up with PWM capabilities to generate square waves representing 
 We can validate our choice by ensuring that individual pitches are accurate to within 1% across the frequency range of 220-1000 Hz: 
 
 #### Percent Error at 220 Hz
-$\% error = 100*\frac{{|calculated - actual|}}{actual}$
+$ \% error = 100*\frac{|calculated - actual|}{actual}$
 
 $ARR = \frac{100 kHz}{pitch_{desired}} = \frac{100000}{220} = 454.54$
 
-The ARR would round this to 455, as it counts in integers
+The ARR would round this to 455, as it counts in integers.
+
 $calculated = 100 kHz/ 455 = 219.78$
 
+We plug this in to get the error,
 $\% error = 100*\frac{|219.78 - 220|}{220} = 0.1\%$
 
 #### Percent Error at 1000 Hz
-$\% error = 100*\frac{{|calculated - actual|}}{actual}$
+$\% error = 100*\frac{|calculated - actual|}{actual}$
 
 $ARR = \frac{100 kHz}{pitch_{desired}} = \frac{100000}{1000} = 100$
 
@@ -102,7 +106,8 @@ To interface with the frequency that we were generating, I used an alternate fun
 ## Hardware Design
 An LM386 audio amplifier [[LM386 Datasheet]](https://www.ti.com/lit/ds/symlink/lm386.pdf) was used to interface MCU pin PA6 with an 8 Ohm speaker. I also employed a potentiometer to control the output volume.
 
-![Lab 4 Wiring Diagram](/assets/images/lab4/WiringDiagram.jpeg) 
+<!-- ![Lab 4 Wiring Diagram](/assets/images/lab4/WiringDiagram.jpeg)  -->
+{% include figure popup=true image_path="/assets/images/lab4/WiringDiagram.jpeg" alt="Lab 4 Wiring Diagram" caption="Lab 4 Wiring Diagram" %}
 
 ## Testing & Debugging
 This lab looked a lot at generating signals at desired frequencies and durations. As a result, the oscilloscope was incredible important in ensuring that clock scaling and timer frequencies were as desired. 
@@ -110,10 +115,16 @@ This lab looked a lot at generating signals at desired frequencies and durations
 ## Demonstration
 My lab played Für Elise from provided starter code at the desired pitch and tempo. 
 
-{{< video https://youtu.be/G4RtP4gDpaY >}}
+{% include video id="G4RtP4gDpaY" provider="youtube" %}
+
+<!-- {{< video https://youtu.be/G4RtP4gDpaY >}} -->
 
 I also transposed one of the best songs ever to play on my speaker as well:
-{{< video https://youtu.be/JBc5Q4JrznM >}}
+
+<!-- {{< video https://youtu.be/JBc5Q4JrznM >}} -->
+
+{% include video id="JBc5Q4JrznM" provider="youtube" %}
+
 
 
 ## Conclusion

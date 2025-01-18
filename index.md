@@ -41,7 +41,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Look at Some Photos"
 
-  - image_path: /assets/images/img_2005.jpeg
+  - image_path: assets/images/IMG_2005.jpeg
     alt: "Woodshop"
     title: "Misc. Projects"
     excerpt: "Check out my other things I find interesting, mainly wood working, sailing, and speakers"

@@ -11,7 +11,7 @@ header:
 #   caption: "Debugging DMA"
 
 excerpt: >
-  These project use an UPduino v3.1 (iCE40 UP5K) FPGA and a STM32 Nucleo-32 board (STM32L432KC) MCU
+  These project use an UPduino v3.1 (iCE40 UP5K) FPGA and a STM32 Nucleo-32 (STM32L432KC) MCU board
 #   actions:
 #     - label: "More Info"
 #       url: "https://unsplash.com"
@@ -68,7 +68,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
-  - image_path: /assets/images/lab7/aes_cor_tb_success.png
+  - image_path: assets/images/lab7/aes_cor_tb_success.PNG
     alt: "AES Encryption"
     title: "AES Encryption"
     excerpt: "Constructing a hardware accelerator for 128-bit Advanced Encryption Standard"

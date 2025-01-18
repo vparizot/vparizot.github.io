@@ -107,7 +107,7 @@ gallery:
 ---
 
 ## FOTOS
-I like to take photos, mostly of my people and the things around me. I develop and print my own photos in the darkroom as much as possible. *Click on a photo to see the album, and feel free to request access to the albums!*
+I like to take photos, mostly of the things and people around me. I develop and print my own photos in the darkroom as much as possible. *Click on a photo to see the album, and feel free to request access to the albums*
 
 
 <!-- {% include gallery caption="This is a sample gallery with **Markdown support**." %} -->

@@ -63,7 +63,7 @@ feature_row:
     alt: "Temperature IoT"
     
     title: "Temperature IoT"
-    excerpt: "IoT device to measure temperature and display on webserver, using UART & SPI"
+    excerpt: "IoT device to measure temperature and display on webserver, using UART & SPI."
     url: "/IoTProject/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
@@ -71,7 +71,7 @@ feature_row:
   - image_path: assets/images/lab7/aes_cor_tb_success.PNG
     alt: "AES Encryption"
     title: "AES Encryption"
-    excerpt: "Constructing a hardware accelerator for 128-bit Advanced Encryption Standard"
+    excerpt: "Constructing a hardware accelerator for 128-bit Advanced Encryption Standard."
     url: "/AESEncryptionProject/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
@@ -79,7 +79,7 @@ feature_row:
   - image_path: /assets/images/lab5/quadrature_encoder.gif
     alt: "Interrupts"
     title: "Interrupts"
-    excerpt: "Implementation of MCU Interrupts to characterize a motor"
+    excerpt: "Implementation of MCU Interrupts to characterize a motor."
     url: "/interruptProject/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
@@ -87,7 +87,7 @@ feature_row:
   - image_path: /assets/images/lab3/lab3header.jpeg
     alt: "Keypad Scanner"
     title: "Keypad Scanner"
-    excerpt: "A deep dive into FSMs"
+    excerpt: "A deep dive into FSMs."
     url: "/FSMProject/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
@@ -103,15 +103,15 @@ feature_row:
   - image_path: /assets/images/lab4/TIM16BlockDiagram.png
     alt: "Digital Audio"
     title: "Digital Audio"
-    excerpt: "An exploration of MCU timers to play music"
+    excerpt: "An exploration of MCU timers to play music."
     url: "/timersProject/"
     btn_class: "btn--primary"
-    btn_label: "Lab 4"
+    btn_label: "Learn More"
 
   - image_path: /assets/images/lab1/SolderFront.jpeg
     alt: "MCU and FPGA Set UP"
     title: "MCU and FPGA Set UP"
-    excerpt: "A mix of SMT soldering"
+    excerpt: "A mix of SMT&THT soldering and setting up the boards."
     url: "/setup/"
     btn_class: "btn--primary"
     # btn_class: ".btn--small"

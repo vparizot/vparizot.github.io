@@ -28,7 +28,7 @@ feature_row:
   - image_path: /assets/images/DD.png
     alt: "EE"
     title: "Digital Design"
-    excerpt: "Take a look at some of my digital design projects"
+    excerpt: "Take a look at some of my digital design projects."
     url: "/digital-design/"
     btn_class: "btn--primary"
     btn_label: "Explore My Projects"
@@ -36,7 +36,7 @@ feature_row:
   - image_path: /assets/images/MUDD2024F_37.jpg
     alt: "fotos"
     title: "Photography"
-    excerpt: "Check out some of my photos, mostly film and of my friends"
+    excerpt: "Check out some of the photos I've taken."
     url: "/fotos/"
     btn_class: "btn--primary"
     btn_label: "Look at Some Photos"
@@ -44,7 +44,7 @@ feature_row:
   - image_path: assets/images/IMG_2005.jpeg
     alt: "Woodshop"
     title: "Misc. Projects"
-    excerpt: "Check out my other things I find interesting, mainly wood working, sailing, and speakers"
+    excerpt: "Check out the other things I find interesting, mainly wood working, sailing, and cars."
     url: "/projects/"
     btn_class: "btn--primary"
     btn_label: "Check Out My Projects"      

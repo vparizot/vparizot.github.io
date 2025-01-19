@@ -1,14 +1,15 @@
 ---
-title: "Lab 6: The Internet of Things and Serial Peripheral Interface"
+title: "The Internet of Things and Serial Peripheral Interface"
 description: "An application of SPI to Read Temperature"
 permalink: /IoTProject/
 
 ---
+*An application of SPI to Read Temperature*
 
 ## Introduction & Learning Objectives
-In Lab 6, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.
+In this project, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.
 
-This lab had the following learning objectives: 
+This project had the following learning objectives: 
 <ul>
 <li>Designed and built a simple IoT device</li>
 <li>Written C libraries using the CMSIS device templates to implement the SPI functionality of the MCU</li>
@@ -74,12 +75,12 @@ The logic analyzer allowed me to look at the SPI communications. I could also co
 A sample SPI transaction from logic analyzer can be seen below. 
 
 <!-- ![Lab 6 SPI Transaction on Logic Analyzer](/assets/images/lab6/DS1Z_QuickPrint12.png)  -->
-{% include figure popup=true image_path="/assets/images/lab6/DS1Z_QuickPrint12.png" alt="Lab 6 SPI Transaction on Logic Analyzer" caption="Lab 6 SPI Transaction on Logic Analyzer" %}
+{% include figure popup=true image_path="/assets/images/lab6/DS1Z_QuickPrint12.png" alt="Lab 6 SPI Transaction on Logic Analyzer" caption="SPI Transaction on Logic Analyzer" %}
 
 ## Conclusion
-Lab 6 provided an introduction into SPI and UART. Moreover, I grew more comfortable with additional debugging tools, such as using the debug mode and the logic analyzer to decipher SPI communication.
+This project provided an introduction into SPI and UART. Moreover, I grew more comfortable with additional debugging tools, such as using the debug mode and the logic analyzer to decipher SPI communication.
 
-Lab 6 meets all the requirements for excellence, and took me approximately 25 hours to complete.
+<!-- Lab 6 meets all the requirements for excellence, and took me approximately 25 hours to complete. -->
 
 
 

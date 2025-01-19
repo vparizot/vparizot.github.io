@@ -1,13 +1,15 @@
 ---
-title: "Lab 4: Digital Audio"
+title: "Digital Audio"
 description: "An exploration of MCU timers to play music"
 permalink: /timersProject/
 
 ---
-## Introduction & Learning Objectives
-In lab 4 I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.
+*An exploration of MCU timers to play music*
 
-To build a system to play music, I used an LM386 audio amplifier, and an 8-ohm speaker. The MCU read a list of notes and generated a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the Reference manual.
+## Introduction & Learning Objectives
+In this project, I used an MCU to play music by using timers to generate square waves by toggling a GPIO pin at a specific frequency for specified durations.
+
+To build a system to play music, I used an LM386 audio amplifier and an 8-ohm speaker. The MCU read a list of notes and generates a corresponding sequence of square waves. For this lab, we were NOT allowed to use CMSIS headers, forcing us to define our own structs to better understand the MCU registers and better familiarize ourselves with reading the STM32L Reference Manual.
 
 This lab had the following learning objectives: 
 
@@ -26,11 +28,11 @@ The MCU read a list of notes specifying pitch (in Hz) and duration (in ms) and g
 {% include figure popup=true image_path="/assets/images/lab4/MCU_TIM_Outline.jpeg" alt="MCU Timer Design Outline" caption="MCU Timer Design Outline" %}
 
 ### MSI Clock
-I left the MSI Clock at it's default frequency of 4 Mhz and was used as the base clock for my subsequent timers. 
+I left the MSI Clock at its' default frequency of 4 Mhz and used it as the base clock for my subsequent timers. 
 
 
 ### Delay Timer (TIM 15)
-Timer 15 was used as the delay timer, and initialized with the initTIMdelay(TIM_TypeDef15 * TIMx) function. As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39. 
+Timer 15 was used as the delay timer, and initialized with my initTIMdelay(TIM_TypeDef15 * TIMx) function. As the delay timer would ultimately read in ms, I opted to scale down my clock from 4Mhz to 100 kHz. This was done by setting the prescaler to 39. 
 
 $Timer freq = \frac{clkfreq}{PSC + 1} = \frac{4 MHz}{40} = 100 kHz$
 
@@ -128,9 +130,9 @@ I also transposed one of the best songs ever to play on my speaker as well:
 
 
 ## Conclusion
-Lab 4 provided an introduction into MCU clock and timers. I grew comfortable with reading the 1600 page datasheet, a task that had previously felt daunting.
+This lab provided an introduction into MCU clock and timers. I grew comfortable with reading the 1600 page datasheet, a task that had previously felt daunting.
 
-Lab 4 meets all the requirements, and took me approximately 24 hours to complete.
+<!-- Lab 4 meets all the requirements, and took me approximately 24 hours to complete. -->
 
 
 

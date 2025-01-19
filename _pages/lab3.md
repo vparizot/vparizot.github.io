@@ -1,11 +1,12 @@
 ---
-title: "Lab 3: Keypad Scanner"
+title: "Keypad Scanner"
 description: "A deep dive into FSMs"
 permalink: /FSMProject/
 
 ---
+*A deep dive into FSMs*
 ## Introduction & Learning Objectives
-In Lab 3, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:
+In this project, I designed and constructed a circuit on my FPGA to read a 4-by-4 matrix keypad and display the last two hexadecimal digits pressed on dual seven-segment displays. My design satisfied all the requirements, including:
 <ul> <li> Design does not lock up when multiple buttons are pressed at once. </li>
 <li> Design only registers first button press if additional buttons are pressed down while holding down one button. </li>
 <li>Each button press registered only once (e.g., no switch bouncing)</li>
@@ -22,12 +23,12 @@ The source code for the project can be found in the associated [Github repositor
 To quote Professor Brake, "This is a thinking person’s lab." As such, I spent a fair amount of time designing a Finite State Machine (FSM) to read the in the matrix keypad inputs, and then creating a block diagram to understand how my modules will intersect. 
 
 ### Scanning FSM
-The FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs wihtin my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. 
+The FSM to read the inputs worked by cycling through pulling each row to high, and looking to see if any of the columns were high, which was tracked in the keyPressed variable. If the FSM found that a key was pressed, it would enter a waiting stage until the button was unpressed. I handled decoding the row and colomn pairs within my FSM module with my scanDecoder module. This allowed me to output the keyDecoded, keyPressed, and the rows from the scanFSM module to interact with other modules. 
 <!-- ![Keypad Scanner FSM](/assets/images/lab3/ScanFSM.jpeg)  -->
 {% include figure popup=true image_path="/assets/images/lab3/ScanFSM.jpeg" alt="Keypad Scanner FSM" caption="Keypad Scanner FSM" %}
 
 ### Key Debouncing FSM
-I then passed through keyDecoded and keyPressed into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed. 
+I then passed through the keyDecoded and keyPressed variables into the keyBounce module, that used an FSM to deal with key debouncing. This FSM had four states: a waiting state, a counting state, a printing state, and then a holding state. The FSM is in the waiting state until keyPressed is high. Once the key is pressed, a counter is triggered. Once the counter reaches a threshold value, then an enabled signal is activated and the signal is displayed on the seven segment display. Then the FSM enters the holding state until the button is unpressed. 
 
 <!-- ![Button Debouncing FSM](/assets/images/lab3/keyDebounceFSM.jpeg)  -->
 {% include figure popup=true image_path="/assets/images/lab3/keyDebounceFSM.jpeg" alt="Button Debouncing FSM" caption="Button Debouncing FSM" %}
@@ -35,7 +36,7 @@ I then passed through keyDecoded and keyPressed into the keyBounce module, that 
 ### Seven Segment Display
 With the keyBounce FSM, a shifter module was called to shift the display on the dual seven segment display and show the new value. The keyBounce FSM ultimately served to disregard quick, high signals. 
 
-Printing and multiplexing the seven segment display was handled with the code from [Lab 2](http://localhost:7108/labs/lab2/lab2.html)
+Printing and multiplexing the seven segment display was handled with the code from [a previous project.](/multiplexingProject/)
 
 ### Design Tradeoffs
 <!-- Report explains tradeoffs between the chosen design decisions and alternatives (e.g., why did you select a certain switch debouncing strategy and what are the tradeoffs between your chosen method and others?). -->
@@ -63,7 +64,7 @@ My waveforms for each model is below:
 <!-- ![keyBounce Test Bench](/assets/images/lab3/keyBounce-tb.png)  -->
 {% include figure popup=true image_path="/assets/images/lab3/keyBounce-tb.png" alt="keyBounce Test Bench" caption="keyBounce Test Bench" %}
 
-My mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week. 
+<!-- My mux, sum, and sevensegments module was taken from Lab 2, where I implemented test benches last week.  -->
 
 
 ## Implementation
@@ -72,14 +73,14 @@ The circuit diagram of my implementation, including pin mapping, is here:
 {% include figure popup=true image_path="/assets/images/lab3/circuitDiagramlab3.jpeg" alt="Lab 3 Circuit Diagram" caption="Lab 3 Circuit Diagram" %}
 
 ### Debugging in Implementation 
-During the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope ot visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.
+During the implementation of my design, I encountered a few bugs. In doing so, using the oscilloscope to visualize which rows are high allowed me to isolate bugs in my FSM. Additionally, the oscilloscope helped me decide the threshold value for my key debouncing module.
 
 ### Handling Metastability
 To handle metastability, I implemented two flip flops and temporary variables to try to line the async input with the clock edge.
 
 
 ## Conclusion
-Lab 3 proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug. 
+This project proved that simulation prior to implementation is a necessity. As a result, I grew familiar with fully defining my system, and how to debug. 
 
 
-Lab 3 meets all the requirements, and took me approximately 30 hours to complete
+<!-- Lab 3 meets all the requirements, and took me approximately 30 hours to complete -->

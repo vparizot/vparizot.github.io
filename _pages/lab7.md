@@ -1,12 +1,13 @@
 ---
-title: "Lab 7: The Advanced Encryption Standard"
-# description: "Welcome to my Quarto portfolio"
+title: "The Advanced Encryption Standard"
+description: "Implementation of the Advanced Encryption Standard"
 permalink: /AESEncryptionProject/
 
 ---
+*Implementation of the Advanced Encryption Standard*
 
 ## Introduction & Learning Objectives
-In Lab 7, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI, and generating and sending the cyphertext from the FPGA. This lab had the following learning objectives: 
+In this project, I constructed a hardware accelerator to perform 128-bit AES encryption, taking in a plaintext message and key from the MCU via SPI, and generating and sending the cyphertext from the FPGA. This had the following learning objectives: 
 
 <ul>
 <li>Learned to read and implement a complex specification</li>
@@ -22,7 +23,7 @@ The AES algorithm specifications can be found [here](https://hmc-e155.github.io/
 The source code for the project can be found in the associated [Github repository](https://github.com/vparizot/e155-lab7).
 
 ## Design
-The size limitations on the FPGA makes it so that we are unable to implement AES as a series of combinational logic. As a result, my design reuses modules setting the outputs of a round to be the inputs of the next round. 
+The size limitations on the FPGA makes it so that I was unable to implement AES as a series of combinational logic. As a result, my design reuses modules setting the outputs of a round to be the inputs of the next round. 
 
 My design goes through ten rounds, where the round being implemented influences the flow of the signals through the modules. For example, the output for rounds 1-9 passes through the mixColumns module, while for round 10 it does not. 
 
@@ -60,8 +61,10 @@ I also hooked up my SPI communication to the logic analyzer, where I set D0 as S
 
 
 ## Conclusion
-In lab7.c under the checkAnswer function, we observe that the LEDs on the board reflect the status of AES Encryption and SPI communication. If Lab 7 works as expected, PA9 is driven high. 
+To ensure that the project meets the requirements, PA9 will be driven high if the generated key matches the correct key, as shown in the main function of my C code. When running my design, I find that PA9 is driven high, meaning that my design works as expected in hardware.
 
-When running my design, I find that PA9 is driven high. Therefore, Lab 7 meets all the requirements, and took me approximately 30 hours to complete.
+<!-- , we observe that the LEDs on the board reflect the status of AES Encryption and SPI communication. If Lab 7 works as expected, PA9 is driven high. 
+
+When running my design, I find that PA9 is driven high. Therefore, Lab 7 meets all the requirements, and took me approximately 30 hours to complete. -->
 
 

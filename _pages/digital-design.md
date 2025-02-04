@@ -8,13 +8,16 @@ author_profile: True
 header:
   overlay_image: assets/images/fotos/VIC_5033.jpg
   overlay_filter: 0.3
+  actions:
+    - label: "Datasheets"
+      # icon: "fab fa-fw fa-linkedin"
+      url: "/resources/"
 #   caption: "Debugging DMA"
 
 excerpt: >
   These project use an UPduino v3.1 (iCE40 UP5K) FPGA and a STM32 Nucleo-32 (STM32L432KC) MCU board
-#   actions:
-#     - label: "More Info"
-#       url: "https://unsplash.com"
+  
+
 
 sidebar:
   - title: "In-Progress Images"

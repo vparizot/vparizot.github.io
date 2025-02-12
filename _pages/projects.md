@@ -29,6 +29,14 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
+  - image_path: /assets/images/diffP/dpTitle.jpg
+    alt: "DiffPScatterPlots"
+    title: "Differential Privacy Research"
+    excerpt: "Applying Post Processing to improve Visual Utility of Differentially Private Scatterplots"
+    url: "/diffPrivacy/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+
   - image_path: /assets/images/misc/variety.jpg
     alt: "Segmented Displays"
     title: "Segmented Displays"
@@ -76,6 +84,8 @@ feature_row:
     url: "/e155Reflection/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
+
+
 
   # - image_path: /assets/images/misc/
   #   alt: ""

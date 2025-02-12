@@ -1,9 +1,12 @@
 This website uses the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
-To host locally: 
+## Workflow: 
+
+### To host locally: 
 bundle install
 bundle exec jekyll serve
 navigate to http://localhost:4000
+
 ---
 
 ## Troubleshooting

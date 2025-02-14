@@ -9,7 +9,7 @@ gallery:
     alt: "Broomball 2024"
     title: "Broomball 2024"
 
-  - url: 
+  - url: https://photos.app.goo.gl/wBXEfvQfL4wXC3878
     image_path: assets/images/fotos/Blaisy.jpg
     alt: "Blaisy Bas Winter 2024"
     title: "Blaisy Bas Winter 2024"
@@ -26,7 +26,7 @@ gallery:
     alt: "WIBSTR"
     title: "WIBSTR"
 
-  - url: 
+  - url: https://photos.app.goo.gl/YgDegFK2MTAYJUUw9
     image_path: assets/images/fotos/fallBrk.jpg
     alt: "Sequoia Fall Break"
     title: "Sequoia Fall Break"
@@ -70,9 +70,6 @@ gallery:
     alt: "ITWP"
     title: "ITWP"
 
-
-
-
   - url: https://drive.google.com/drive/folders/1mFTD6RlGOxzoyiQ2k9JeugQVn82OhNeJ?usp=drive_link
     image_path: assets/images/fotos/laundry.jpg
     alt: "Linde WC"
@@ -83,22 +80,20 @@ gallery:
     alt: "Mount Baldy"
     title: "Mount Baldy"
 
-  - url: 
+  - url: https://photos.app.goo.gl/YgDegFK2MTAYJUUw9
     image_path: assets/images/fotos/treeshadow.jpg
     alt: "Seqouia"
     title: ""
-
-
 
   - url: https://drive.google.com/drive/folders/1BL9VPGzy-SUbCZGMKblPWT4FO-2t9UNX?usp=drive_link
     image_path: assets/images/fotos/deathValley.jpg
     alt: "Death Valley"
     title: "Death Valley"
 
-  - url: 
+  - url: https://photos.app.goo.gl/2pZqKSDZecKrMh3s5
     image_path: assets/images/microPDemo/VIC_5525.jpg
-    alt: "Boston Tea Party"
-    title: "Boston Tea Party"
+    alt: "CalvinChronicles"
+    title: "CalvinChronicles"
 
   - url: 
     image_path: assets/images/fotos/b5guitar.jpg

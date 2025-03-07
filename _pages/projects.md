@@ -23,9 +23,17 @@ feature_row:
 
   - image_path: /assets/images/misc/bowlspolished.jpeg
     alt: "woodbowls"
-    title: "Wooden Bowls"
+    title: "Stackable Wooden Bowls"
     excerpt: "Stackable Wood Bowls Made in the HMC Machine Shop"
     url: "/woodbowls/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+
+  - image_path: /assets/images/misc/lowriders/MUDD2024F_17copy.jpeg
+    alt: "LowRider Car meet"
+    title: "Low Riders in Film"
+    excerpt: "Some of my film photos from a low rider car meet in SoCal"
+    url: "/lowriders/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
@@ -34,6 +42,14 @@ feature_row:
     title: "Differential Privacy Research"
     excerpt: "Applying Post Processing to improve Visual Utility of Differentially Private Scatterplots"
     url: "/diffPrivacy/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+
+  - image_path: /assets/images/misc/blaisy/BlaisyOld8.jpeg
+    alt: "blaisy"
+    title: "A Trip to Blaisy"
+    excerpt: "Looking at a 10 year difference with my brother"
+    url: "/blaisy/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 

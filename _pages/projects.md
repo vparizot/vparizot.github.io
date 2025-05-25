@@ -12,14 +12,29 @@ excerpt: >
 
 
 feature_row:
-  # - image_path: 
-  #   alt: "table"
-  #   title: "Making an HMC Table"
-  #   excerpt: "The dimensions "
-  #   url: "/hmctable/"
-  #   btn_class: "btn--primary"
-  #   btn_label: "Learn More"
+  - image_path: assets/images/gokart/gokart2.jpeg
+    alt: "gokart"
+    title: "Go Kart Shopping Cart"
+    excerpt: "Built a motorized shopping kart"
+    url: "/gokart/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
 
+  - image_path: assets/images/wecotable/table6.jpg
+    alt: "table"
+    title: "Making an HMC Table"
+    excerpt: " The Dimensions and Process for Building a Good WeCo Table "
+    url: "/hmctable/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+
+  - image_path: /assets/images/workshopBowl/bowldemo.png
+    alt: "bowlworkshop"
+    title: "Wood Bowl Workshop"
+    excerpt: "Hosted a workshop for bowls on the wood lathe"
+    url: "/bowlworkshop/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
 
   - image_path: /assets/images/misc/bowlspolished.jpeg
     alt: "woodbowls"
@@ -29,7 +44,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
-  - image_path: /assets/images/misc/lowriders/MUDD2024F_17copy.jpeg
+  - image_path: /assets/images/misc/lowriders/ss4x3.png
     alt: "LowRider Car meet"
     title: "Low Riders in Film"
     excerpt: "Some of my film photos from a low rider car meet in SoCal"

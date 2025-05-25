@@ -132,7 +132,12 @@ feature_row:
 
 To learn more about the project, check out the project website: 
 
-<a href="https://projectparivo.github.io/ProjectParivoPortfolio/" class="btn btn--primary">Learn more about Project PariVo</a>
+<a href="https://projectparivo.github.io/ProjectParivoPortfolio/" 
+   class="btn btn--primary" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   Learn more about Project PariVo
+</a>
 
 ## More Projects!
 

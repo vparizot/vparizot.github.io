@@ -15,8 +15,16 @@ feature_row:
   - image_path: assets/images/gokart/gokart2.jpeg
     alt: "gokart"
     title: "Go Kart Shopping Cart"
-    excerpt: "Built a motorized shopping kart"
+    excerpt: "Motorized shopping kart project, super duper fast"
     url: "/gokart/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+
+  - image_path: assets/images//DTU/pickup3.png
+    alt: "VAWT"
+    title: "Wind Turbine"
+    excerpt: "The design, build process, & testing of a Vertical Axis Wind Turbine"
+    url: "/turbine/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 

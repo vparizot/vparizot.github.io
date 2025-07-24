@@ -59,7 +59,7 @@ feature_row:
 
 <!-- {% include figure popup=true image_path="/assets/images/headshot.jpeg" caption="My brother and I hiking" %} -->
 
-Hi! I'm Victoria and I'm currently studying Engineering at Harvey Mudd College (Co '2025). I'm interested in all things mechanical and electrical, especially Embedded Systems and FPGA desgin! At Mudd, I'm a West Dorm President, Machine Shop Proctor, and Member of the Tau Beta Pi Honors Society. 
+Hi! I'm Victoria and I'm currently studying Engineering at Harvey Mudd College (Co '2025). I'm interested in all things mechanical and electrical, especially Embedded Systems! At Mudd, I'm a West Dorm President, Machine Shop Proctor, and Member of the Tau Beta Pi Honors Society. 
 
 In my free time, I love woodworking, film photography, cars, and sailing. 
 

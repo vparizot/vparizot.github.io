@@ -124,20 +124,47 @@ feature_row:
 ---
 ## Two-Channel DJ Mixer
 
+<!-- <object data="/assets/images/microPDemo/djSlides.pptx" type="application/vnd.ms-powerpoint.slideshow.macroEnabled.12" width="100%" height="100%"></object> -->
+
 
 ![image](/assets/images/microPDemo/PariVo.JPEG){: style="float: left"}
 
 <sub> I made a two-channel DJ Mixer that controls the frequency and gain of AUX audio based on user inputs. Audio is read into the iCE40 FPGA through I2S commuication with an external PCM1808 ADC. We achieved lowpass and highpass filters in simulation using Finite Impulse Response (FIR) Filters and through hardware using RC circuits. The audio is then passed into the STM32 MCU using SPI, where the onboard DAC Peripheral with Direct Memory Access (DMA) outputs the manipulated audio to speakers. I got a lot of experience debugging and testing, making heavy use of the logic analyzer to visualize serial communication and the oscilliscope to view the audio wave forms. </sub>
 <!-- ![DJ Mixer](/assets/images/microPDemo/PariVo.JPEG){: .align-left} -->
 
-To learn more about the project, check out the project website: 
+To learn more about the project, check out the project website or my presentation slides: 
 
-<a href="https://projectparivo.github.io/ProjectParivoPortfolio/" 
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+  <a href="https://projectparivo.github.io/ProjectParivoPortfolio/" 
+     class="btn btn--primary" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     Project PariVo Website
+  </a>
+
+  <a href="https://docs.google.com/presentation/d/e/2PACX-1vRHtYyCuLfjcEe0HlSD-8_H2_jvT-ryAISa_HQszsgkotnh8DJS9z5wOb0NeM0VtwXTIxp322ezdjIu/pub?start=false&loop=false&delayms=3000" 
+     class="btn btn--primary" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     Project PariVo Slides
+  </a>
+</div>
+
+<!-- <a href="https://projectparivo.github.io/ProjectParivoPortfolio/" 
    class="btn btn--primary" 
    target="_blank" 
    rel="noopener noreferrer">
-   Learn more about Project PariVo
+   Project PariVo Website
 </a>
+
+<a href="https://docs.google.com/presentation/d/e/2PACX-1vRHtYyCuLfjcEe0HlSD-8_H2_jvT-ryAISa_HQszsgkotnh8DJS9z5wOb0NeM0VtwXTIxp322ezdjIu/pub?start=false&loop=false&delayms=3000" 
+   class="btn btn--primary" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   Project PariVo Slides
+</a> -->
+
+
 
 ## More Projects!
 

@@ -1,6 +1,6 @@
 ---
 permalink: /blaisy/
-title: "Blaisy Ba"
+title: "Blaisy Bas"
 description: "A return trip to my dad's hometown"
 # author: "Night in "
 ---
@@ -8,7 +8,7 @@ description: "A return trip to my dad's hometown"
 This past winter break, my brother (Max) and I went to Blaisy Bas for the first time in about a decade. Blaisy Bas is a tiny, tiny, tiny town outside Dijon, France where my dad grew up. It's the kind of town that has one bakery and one general store, and you can bike through in under 5 minutes. My brothers and I spent a lot of summers here when we were younger -- helping my aunt with her farm, biking on the rundown motorcross, and hanging out with the other 7 kids in town. 
 
 {% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld1.jpeg" caption="A bad photo of Blaisy I took on my dad's iphone 3G" %}
-{% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld13.jpeg" caption="Backyyard of my Papie's house with the popular instagram filter at the time" %}
+{% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld13.jpeg" caption="Backyard of my Papie's house with the popular instagram filter at the time" %}
 
 
 During these summers, my brothers and I would "help" (play) at my aunt's farm. Luckily, she was very patient with us. She grew these flowers for cream that needed to be picked by hand, so my brothers and I would spend hours trying to find the most perfect flowers to pick. 

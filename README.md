@@ -7,6 +7,12 @@ bundle install
 bundle exec jekyll serve
 navigate to http://localhost:4000
 
+### to publish
+j git add, commit, & push 
+
+### Notes:
+photos are 4000 x 3000
+
 ---
 
 ## Troubleshooting
@@ -19,5 +25,9 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 
 
 ## Pages to add
-- Bowl HMC Machine Shop work shop
+- DTU - DAC
 - Kinetic Sculpt
+- brother & i roaddtrippp
+- graduation
+- coffin
+- 

@@ -5,14 +5,13 @@ description: "Vertical-Axis Wind Turbine Clinic Project"
 header:
   overlay_image: assets/images/DTU/pickup3.png
   overlay_filter: 0.3
-#   actions:
-#     - label: "Dimensions and process for building a good WeCo Table"
-# #       url: "https://shoppinggokart.github.io/mechdesignwebsite/"
-# # #   caption: "Debugging DMA"
+  actions:
+    - label: "Source Code"
+      url: "https://github.com/vparizot/DTUHWU-DAQ"
+
 
 excerpt: >
  Building and testing a Vertical-Axis Wind Turbine
- <br>
  <br>
  <br>
  <br>

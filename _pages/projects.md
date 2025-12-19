@@ -31,8 +31,16 @@ feature_row:
   - image_path: assets/images/wecotable/table6.jpg
     alt: "table"
     title: "Making an HMC Table"
-    excerpt: " The Dimensions and Process for Building a Good WeCo Table "
+    excerpt: "The Dimensions and Process for Building a Good WeCo Table"
     url: "/hmctable/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
+
+  - image_path: assets/images/coffin/coffin4.png
+    alt: "coffin"
+    title: "Subatomic Coffin"
+    excerpt: "Building a decorative coffin for our suite"
+    url: "/coffin/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 

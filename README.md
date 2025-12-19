@@ -25,9 +25,6 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 
 
 ## Pages to add
-- DTU - DAC
 - Kinetic Sculpt
-- brother & i roaddtrippp
 - graduation
-- coffin
 - 

@@ -22,18 +22,17 @@ excerpt: >
 
 My friends and I made a WeCo table with the notel motel design. If you're thinking of making a good courtyard table, here is the list & dimensions of wood you would need:
 
-| Item                 | Quantity | Purpose                            |
-| :----------------    | :------: | ----:                              |
-|  4x8' plank          |     1    | table top                          |
-|  4x4 of length 37”   |     6    | legs                               |
-|  2x4 of length 96”   |     4    | upper side supports, longways      |
-|  2x4 of length 93”   |     2    | lower nner side supports, longways |
-|  2x4 of length 48”   |     2    | side supports, stubby way          |
-|  2x4 of length 45”   |     5    |inside under table supports, stubby way |
-|  6x1” of length 36”  |     2    |shelves, stubby way                 |
-|  6x1 of length 33.5” |     4    |shelves, 2 per each side of longways|
+| Item               | Quantity | Purpose                                     |
+| :----------------  | :------: | ----:                                       |
+|4x8' plank          |     1    | table top                                   |
+|4x4 of length 37”   |     6    | legs                                        |
+|2x4 of length 96”   |     4    | upper & lower side supports, longways       |
+|2x4 of length 45”   |     4    | side supports, stubby way                   |
+|2x4 of length 45”   |     5    | under table top supports, stubby way        |
+|6x1” of length 36”  |     2    | shelves, stubby way                         |
+|6x1 of length 33.5” |     4    | shelves, 2 per each longway side            |
 
-We put it all together with 2" TORX wood screws. The TORX wood screws help prevent stripping the screws. When we replaced all the tops of the table after over a year, the TORX screws were easy to take out.
+We put it all together with 2.25" TORX wood screws. The TORX wood screws help prevent stripping the screws. When we replaced all the tops of the table after over a year, the TORX screws were easy to take out.
 
 The shelves can be any dimensions, so it's worth seeing what scraps are left in the wood shop.
 

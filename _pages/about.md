@@ -59,9 +59,9 @@ feature_row:
 
 <!-- {% include figure popup=true image_path="/assets/images/headshot.jpeg" caption="My brother and I hiking" %} -->
 
-Hi! I'm Victoria and I'm currently studying Engineering at Harvey Mudd College (Co '2025). I'm interested in all things mechanical and electrical, especially Embedded Systems! At Mudd, I'm a West Dorm President, Machine Shop Proctor, and Member of the Tau Beta Pi Honors Society. 
+Hi! My name is Victoria and I'm an Electrical Engineer. I just graduated with my Engineering degree from Harvey Mudd College (Co '2025). I'm interested in all things mechanical and electrical, especially Embedded Systems!
 
-In my free time, I love woodworking, film photography, cars, and sailing. 
+I like to fill my free time with woodworking, electronics, film photography, cars, and sailing. 
 
 If you want to reach out, feel free to shoot me an <a href= "mailto:vparizot@g.hmc.edu">email</a>! 
 

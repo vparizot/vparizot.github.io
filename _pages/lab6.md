@@ -7,7 +7,7 @@ permalink: /IoTProject/
 *An application of SPI to Read Temperature*
 
 ## Introduction & Learning Objectives
-In this project, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8255, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.
+In this project, I built an internet-accessible device to control an onboard LED and measure ambient temperature. I used an ESP8266, the MCU GPIO, a DS1722 temperature sensor, and SPI peripherals to view current temperature on a webserver and allow the user to control temperature resolution and an onboard LED.
 
 This project had the following learning objectives: 
 <ul>

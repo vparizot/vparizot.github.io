@@ -93,7 +93,7 @@ footer:
       url: "https://github.com/vparizot"
     - label: "Resume"
       icon: "fa-solid fa-scroll"
-      url: "https://docs.google.com/document/d/e/2PACX-1vTFlpDc-Ko6eE53fxlV-lATOuHy4UeupXxoglTW_tuVPPENkOFvAJzHs5jiRg7QYf3TiOKGzU8lNNl_/pub"
+      url: "/resume/"
 
 defaults:
   # _posts

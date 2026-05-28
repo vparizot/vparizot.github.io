@@ -1,7 +1,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Digital Design"
+  - title: "Embedded Design"
     url: /digital-design/
   - title: "Photos"
     url: /fotos/

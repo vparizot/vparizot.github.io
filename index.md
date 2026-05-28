@@ -27,8 +27,8 @@ excerpt: >
 feature_row:
   - image_path: /assets/images/DD.png
     alt: "EE"
-    title: "Digital Design"
-    excerpt: "Take a look at some of my digital design projects."
+    title: "Embedded Design"
+    excerpt: "Take a look at some of my embedded design projects."
     url: "/digital-design/"
     btn_class: "btn--primary"
     btn_label: "Explore My Projects"

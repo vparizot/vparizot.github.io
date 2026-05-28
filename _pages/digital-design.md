@@ -1,6 +1,6 @@
 ---
 permalink: /digital-design/
-title: "Digital Design Showcase"
+title: "Embedded Design Showcase"
 
 layout: single
 author_profile: True

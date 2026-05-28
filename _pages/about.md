@@ -28,8 +28,8 @@ excerpt: >
 feature_row:
   - image_path: /assets/images/DD.png
     alt: "EE"
-    title: "Digital Design"
-    excerpt: "Take a look at some of my digital design projects."
+    title: "Embedded"
+    excerpt: "Take a look at some of my embedded projects."
     url: "/digital-design/"
     btn_class: "btn--primary"
     btn_label: "Explore My Projects"
@@ -45,7 +45,7 @@ feature_row:
   - image_path: assets/images/IMG_2005.jpeg
     alt: "Woodshop"
     title: "Misc. Projects"
-    excerpt: "Check out the other things I find interesting, mainly wood working, sailing, and cars."
+    excerpt: "Check out the other things I find interesting!"
     url: "/projects/"
     btn_class: "btn--primary"
     btn_label: "Check Out My Projects" 
@@ -59,11 +59,11 @@ feature_row:
 
 <!-- {% include figure popup=true image_path="/assets/images/headshot.jpeg" caption="My brother and I hiking" %} -->
 
-Hi! My name is Victoria and I'm an Electrical Engineer. I just graduated with my Engineering degree from Harvey Mudd College (Co '2025). I'm interested in all things mechanical and electrical, especially Embedded Systems!
+Hi! My name is Victoria and I'm an Electrical + Embedded Engineer. I graduated with my Engineering degree from Harvey Mudd College (Co '2025). I'm interested in all things embedded, from the hardware to software, and passionate about solving multidisiplinary problems.
 
-I like to fill my free time with woodworking, electronics, film photography, cars, and sailing. 
+I like to fill my free time with woodworking, pottery, electronics, film photography, car repairs, and sailing. 
 
-If you want to reach out, feel free to shoot me an <a href= "mailto:vparizot@g.hmc.edu">email</a>! 
+If you want to reach out, feel free to shoot me an <a href= "mailto:mparizot@gmail.com">email</a>! 
 
 <br>
 ## Check Out My Interests!

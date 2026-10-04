@@ -64,7 +64,7 @@ plugins:
 author:
   name   : "Martha-Victoria Parizot"
   avatar : "/assets/images/headshot.jpeg"
-  bio    : "Harvey Mudd Engineer interested in all things mechanical and electrical"
+  bio    : "Embedded Engineer interested in solving multidisciplinary problems"
 
   links:
     # - label: "Website"
@@ -91,9 +91,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/vparizot"
-    - label: "Resume"
-      icon: "fa-solid fa-scroll"
-      url: "/resume/"
+    # - label: "Resume"
+    #   icon: "fa-solid fa-scroll"
+    #   url: "/resume/"
 
 defaults:
   # _posts

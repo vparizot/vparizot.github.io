@@ -52,4 +52,4 @@ Here are some pictures of our table and the other tables in the courtyard gettin
 
 {% include figure popup=true image_path="/assets/images/wecotable/table5.jpg" caption="our table in the pool" %}
 
-{% include figure popup=true image_path="/assets/images/wecotable/table4.jpg" caption="our table in the pool again" %}
+<!-- {% include figure popup=true image_path="/assets/images/wecotable/table4.jpg" caption="our table in the pool again" %} -->

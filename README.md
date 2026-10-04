@@ -27,4 +27,4 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 ## Pages to add
 - Kinetic Sculpt
 - graduation
-- 
+- pottery

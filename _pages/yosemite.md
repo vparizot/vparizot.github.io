@@ -1,5 +1,5 @@
 ---
-permalink: /yosemite/
+# permalink: /yosemite/
 title: "Yosemite Backpacking"
 description: "Intro to Backpacking"
 # author: "Night in "

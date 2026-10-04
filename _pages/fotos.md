@@ -9,7 +9,7 @@ gallery:
     alt: "Broomball 2024"
     title: "Broomball 2024"
 
-  - url: https://photos.app.goo.gl/wBXEfvQfL4wXC3878
+  - url: 
     image_path: assets/images/fotos/Blaisy.jpg
     alt: "Blaisy Bas Winter 2024"
     title: "Blaisy Bas Winter 2024"
@@ -26,7 +26,7 @@ gallery:
     alt: "WIBSTR"
     title: "WIBSTR"
 
-  - url: https://photos.app.goo.gl/YgDegFK2MTAYJUUw9
+  - url: 
     image_path: assets/images/fotos/fallBrk.jpg
     alt: "Sequoia Fall Break"
     title: "Sequoia Fall Break"
@@ -80,7 +80,7 @@ gallery:
     alt: "Mount Baldy"
     title: "Mount Baldy"
 
-  - url: https://photos.app.goo.gl/YgDegFK2MTAYJUUw9
+  - url: #https://photos.app.goo.gl/YgDegFK2MTAYJUUw9
     image_path: assets/images/fotos/treeshadow.jpg
     alt: "Seqouia"
     title: ""

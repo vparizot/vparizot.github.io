@@ -15,7 +15,7 @@ I wrote up a process router, which you can check out [here.](https://docs.google
 {% include figure popup=true image_path="/assets/images/workshopBowl/bowldemo.png" caption="Workshop action shot" %}
 
 
-After the workshop I stayed and made my own bowl! I made it two sided, with a bowl on one side and a ring holder on the other. 
+After the workshop made my own bowl. I made it two sided, with a bowl on one side and a ring holder on the other. 
 
 {% include figure popup=true image_path="/assets/images/workshopBowl/bowlsoak.png" caption="Soaking the bowl" %}
 

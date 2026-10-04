@@ -11,24 +11,24 @@ This past winter break, my brother (Max) and I went to Blaisy Bas for the first 
 {% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld13.jpeg" caption="Backyard of my Papie's house with the popular instagram filter at the time" %}
 
 
-During these summers, my brothers and I would "help" (play) at my aunt's farm. Luckily, she was very patient with us. She grew these flowers for cream that needed to be picked by hand, so my brothers and I would spend hours trying to find the most perfect flowers to pick. 
+During these summers, my brothers and I would "help" at my aunt's farm. Luckily, she was very patient with us. She grew these flowers for cream that needed to be picked by hand, so my brothers and I would spend hours trying to find the most perfect flowers to pick. 
 
 {% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld11.jpeg" caption="" %}
 {% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld8.jpeg" caption="Picking the delicate flowers" %}
 
-She had another plant that attracted ladybugs -- there were hundreds, if not thousands, of ladybugs on these plants. I would play a game where I would try to get as many as I could to crawl on me, and put more in my cupped hands. Then, I'd open my hands and call myself the lady bug princess. She also grew grain for livestock, and let us play in the tubs of grains she had.
+She had another plant that attracted ladybugs -- there were hundreds, if not thousands, of ladybugs on these plants. I liked trying to get as many as I could to crawl on me. She also grew grain for livestock, and let us play in the tubs of grains she had.
 
 {% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld3.jpeg" caption="Moving the grain" %}
 
 {% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld9.jpeg" caption="We took turns burying eachother in the grain." %}
 
-One summer, she watched Shrek with us and enlisted us to help her make an outhouse for the farm. It was awesome. 
+One summer, she watched Shrek with us and enlisted us to help her make an outhouse for the farm.
 
 {% include figure popup=true image_path="/assets/images/misc/blaisy/BlaisyOld6.jpeg" caption="Driving the new outhouse into the field" %}
 
 ## January 2025
 
-When my brother and I returned this winter, we took a walk around the village. While I hadn't been there since the 4th grade, it was exactly how I remembered it. Nothing changed -- it was the same houses, same streets, and same level of rundown.
+When my brother and I returned this winter, we took a walk around the village. While I hadn't been there since the 4th grade, it was exactly how I remembered it. 
 {% include figure popup=true image_path="/assets/images/misc/blaisyNew/VIC_5793.jpg" caption="Leaving my Papi's house" %}
 
 {% include figure popup=true image_path="/assets/images/misc/blaisyNew/VIC_5808.jpg" caption="" %}

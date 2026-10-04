@@ -40,7 +40,9 @@ Perhaps the most fun, and rewarding, aspect of this project was strapping our tu
 
 {% include figure popup=true image_path="/assets/images/DTU/pickup3.png" caption="Pickup Truck Testing" %}
 
-The pick-up truck testing allowed the team to see at what wind speed the VAWT is able to generate current into the battery. Current into the battery implies power generation, proportional to the current and voltage going into the battery from the MPPT. Data from the DAQ 
+The pick-up truck testing allowed the team to see at what wind speed the VAWT is able to generate current into the battery. Current into the battery implies power generation, proportional to the current and voltage going into the battery from the MPPT. 
+
+## Results from Pickup Truck Testing
 
 {% include figure popup=true image_path="/assets/images/DTU/pickupTrial12.png" caption="Current and Wind Speed Data" %}
 
